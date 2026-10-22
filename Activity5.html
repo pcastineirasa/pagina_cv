@@ -61,15 +61,31 @@ b i {
     <ul>
       <li>Experiencia académica</li>
       <ul id="expAcad">
-        <li>Ejemplo A</li>
-	      <li>Ejemplo B</li>
       </ul><br>
       <li>Experiencia profesional</li>
       <ul id="expProf">
-        <li>Ejemplo C</li>
-      	<li>Ejemplo D</li>
+        <li>N/A</li>
       </ul><br>
     </ul>
     <b><i>Fin</i></b>
   </body>
+<script>
+  const exp_academica = [
+    {
+      "titulo": "GS Desarrollo de Aplicaciones Web",
+      "periodo": "2025-27",
+      "centro": "CPR Afundación A Coruña"
+    },
+    {
+      "titulo": "Bachillerato de Ciencias",
+      "periodo": "2019-21",
+      "centro": "IESP Xosé Neira Vilas"
+    }
+  ];
+  const exp_profesional = [
+  ];
+  for(let object of exp_academica){
+    document.getElementById("expAcad").innerHTML += ("<li>" + object.titulo + " en " + object.centro + ", años " + object.periodo + "</li>");
+  };
+</script>
 </html>
